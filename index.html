@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz" id="start-page">
+        <h1>QUIZ</h1>
+        <h4 id="start-button">START</h4>
+    </div>
+
+    <div class="quiz-container">
+        <div id="quiz">
+            <div class="question-container">
+                <h2 id="question">1.What is so fragile that saying its name breaks it?</h2>
+            </div>
+
+                <div class="answers-container">
+                    <button class="answer" onclick="selectAnswer(this)">Silence</button>
+                    <button class="answer" onclick="selectAnswer(this)">A candle</button>
+                    <button class="answer" onclick="selectAnswer(this)">A pillow</button>
+                </div>
+
+                <div class="navigation">
+                    <button id="prev" onclick="prevQuestions()">⏮️</button>
+                    <button id="next" onclick="nextQuestions()">⏭️</button>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

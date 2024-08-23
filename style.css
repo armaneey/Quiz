@@ -1,0 +1,148 @@
+body, h2, button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.quiz h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.quiz h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.quiz-container{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px white;
+    max-width: 500px;
+    width: 100%;
+}
+
+.question-container{
+    margin-bottom: 20px;
+}
+
+#question{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.answers-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer{
+    padding: 10px;
+    border: none;
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.answer:hover{
+    background-color: brown;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#prev, #next{
+    padding: 10px 20px;
+    border: none;
+    background-color: aqua;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#prev:hover, #next:hover{
+    background-color: blue;
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .answers-container {
+        flex-direction: column;
+    }
+
+    .answer {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #prev, #next {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #question {
+        font-size: 1.2em;
+    }
+
+    .answer {
+        font-size: 0.9em;
+        padding: 7px;
+    }
+
+    #prev, #next {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .quiz h4 {
+        font-size: 16px;
+    }
+    }
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .quiz h4 {
+        font-size: 17px;
+    }
+}
